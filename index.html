@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Indigo Art Gallery</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<header>
+<img src="flamingtext_com-2155804225.png" alt="Indigo Art Gallery Logo" class="logo">
+</header>
+
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">Who We Are</a></li>
+<li><a href="who.html">What We Do</a></li>
+<li><a href="studio.html">The Studio</a></li>
+</ul>
+</nav>
+<section class="home-intro">
+    <h1>Welcome to Indigo Art Gallery</h1>
+    <p>
+        Indigo Art Gallery is a creative space dedicated to bringing the community
+        together through art, expression, and imagination. Our gallery offers
+        immersive classes, inspiring exhibitions, and hands-on creative experiences
+        for artists of all ages and skill levels.
+    </p>
+</section>
+<section class="events-section">
+    <h2>Upcoming Events</h2>
+
+    <div class="events-container">
+       <div class="container">
+       <div class="row g-4">
+    <div class="col-lg-6">
+      <div class="accordion mb-4" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+              Community Paint Night
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Join us every Friday evening for a relaxed, guided painting experience. All supplies are included and all skill levels are welcome.
+            </div>
+          </div>
+        </div>
+       </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+              Teen Art Workshop
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              A creative space for young artists ages 13–18 to experiment with acrylics, charcoal, and mixed media.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+              Local Artist Showcase
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Experience rotating collections from local talent and support the creative voices of our community.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="ratio ratio-16x9">
+          <iframe
+            src="https://maps.google.com/maps?q=manhattan&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            style="border:0;"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-lg-6">
+
+      <div class="event-highlights mb-4">
+        <h3>Event Highlights</h3>
+        <ul>
+          <li>Fridays @ 6:00 PM — Community Paint Night</li>
+          <li>Saturdays @ 1:00 PM — Teen Workshop</li>
+          <li>Monthly — Artist Showcase</li>
+        </ul>
+      </div>
+
+      <h3>Request to Attend an Event</h3>
+      <form class="event-form" action="mailto:info@indigoartgallery.com" method="post" enctype="text/plain">
+
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email">
+
+        <label for="event">Select Event</label>
+        <select id="event" name="event">
+          <option>Community Paint Night</option>
+          <option>Teen Art Workshop</option>
+          <option>Local Artist Showcase</option>
+        </select>
+
+        <label for="people">Number of Attendees</label>
+        <input type="number" id="people" name="people" min="1" max="10">
+
+        <label for="message">Questions / Requests</label>
+        <textarea id="message" name="message"></textarea>
+
+        <div class="form-buttons">
+          <input type="submit" value="Submit Inquiry">
+          <input type="reset" value="Reset">
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
+</div>
+</section>
+
+<footer class="footer">
+    <p><strong>Indigo Art Gallery</strong></p>
+    <p>123 Art Lane, Downtown District</p>
+    <p>Email: info@indigoartgallery.com | Phone: (555) 123-4567</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

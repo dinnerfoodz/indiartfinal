@@ -1,0 +1,350 @@
+/* styles.css */
+
+
+header {
+width: 100%;
+background-color: rgba(255, 255, 255, 0.738);
+padding: 20px 0;
+display: flex;
+justify-content: center;
+box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+
+.logo {
+max-width: 500px;
+}
+
+
+nav {
+width: 100%;
+background-color: rgb(216, 182, 222);
+text-decoration: none;
+color: white;
+font-size: 1.2rem;
+font-weight: bold;
+padding: 15px 0;
+display: block;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+nav > ul {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+gap: 40px;
+}
+
+nav ul li a:hover {
+   background-color: rgb(216, 182, 222);
+   color: white;
+}
+
+p {
+width: 90%;
+max-width: 1000px;
+padding: 40px 0;
+display: flex;
+justify-content: center;
+text-align: center;
+}
+
+.footer {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0 -4px 8px rgba(0,0,0,0.15);
+}
+
+/* EVENTS SECTION */
+
+.events-section {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.events-container {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.event-description,
+.event-highlights {
+    flex: 1;
+    background-color: rgba(242, 225, 247, 0.6);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+/* STUDIO PAGE */
+.studio-hero {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.studio-features {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    display: flex;
+    gap: 40px;
+}
+
+.studio-text {
+    flex: 1;
+}
+
+.equipment-list {
+    padding-left: 20px;
+}
+
+.studio-images {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.studio-images img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.studio-video {
+    width: 90%;
+    max-width: 1000px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.video-placeholder {
+    margin-top: 20px;
+    padding: 60px;
+    background-color: rgba(216, 182, 222, 0.4);
+    border-radius: 15px;
+    font-size: 1.2rem;
+}
+
+/* MOBILE */
+@media (max-width: 800px) {
+    .events-container,
+    .studio-features {
+        flex-direction: column;
+    }
+
+    .studio-images {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* STUDIO GALLERY PAGE */
+
+.studio-gallery-page {
+    width: 95%;
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.studio-intro {
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+/* GALLERY STYLE - Based on W3Schools */
+div.gallery {
+    margin: 15px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 250px;
+    background-color: white;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* CLEAR FLOATS */
+.studio-gallery-page::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* RESPONSIVE FIX */
+@media (max-width: 900px) {
+    div.gallery {
+        width: 90%;
+        float: none;
+        margin: 20px auto;
+    }
+}
+div.gallery {
+    width: 260px; 
+}
+
+div.gallery img {
+    height: 200px;
+    object-fit: cover;
+}
+/* HOME INTRO HEADLINER */
+.home-intro {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto 20px;
+    padding: 30px 25px;
+    background-color: rgba(242, 225, 247, 0.6);
+    border-radius: 15px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.home-intro h1 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.home-intro p {
+    width: 100%;
+    padding: 0;
+}
+
+/* ENSURE FOOTER IS CENTERED */
+.footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.event-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 12px;
+    text-align: left;
+}
+
+.event-form label {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.event-form input,
+.event-form select,
+.event-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.event-form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.form-buttons input {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    background-color: rgb(216, 182, 222);
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.form-buttons input:hover {
+    background-color: rgb(186, 152, 192);
+}
+/* studio intro fix */
+.studio-intro {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ABOUT VIDEO SECTION */
+.about-video-section {
+  position: relative;
+  min-height: 75vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* Background Video */
+.about-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Dark overlay for readability */
+.about-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 2;
+}
+
+/* Content container */
+.about-content {
+  position: relative;
+  z-index: 3;
+}
+
+/* Text card */
+.about-card {
+  background: rgba(255, 255, 255, 0.92);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Typography */
+.about-card h2 {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.about-card p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0;
+}
